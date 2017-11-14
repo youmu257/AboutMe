@@ -334,7 +334,7 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: python 2s ease;
 }
 .php {
-  	width: 45%;
+  	width: 30%;
     background: rgb(243, 75, 125);
   	-moz-animation: php 2s ease;
   	-webkit-animation: php 2s ease;
@@ -347,7 +347,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .c {
-  	width: 50%;
+  	width: 30%;
     background: rgb(23, 134, 0);
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
