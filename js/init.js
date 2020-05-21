@@ -6,6 +6,15 @@
 
  jQuery(document).ready(function($) {
 
+   /*----------------------------------------------------*/
+   /* Load content
+   ------------------------------------------------------ */
+      // education
+      $("#education").load("content/education.html");
+
+      // work experience
+      $("#work").load("content/work_experience.html");
+
 /*----------------------------------------------------*/
 /* FitText Settings
 ------------------------------------------------------ */
