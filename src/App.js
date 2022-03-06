@@ -14,7 +14,7 @@ function App () {
           <ul id="nav" className="nav">
               <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
               <li><a className="smoothscroll" href="#about">About</a></li>
-            <li><a className="smoothscroll" href="#resume">Resume</a></li>
+              <li><a className="smoothscroll" href="#resume">Resume</a></li>
               <li><a className="smoothscroll" href="#portfolio">Works</a></li>
           </ul>
           {/* end #nav */}
@@ -31,10 +31,28 @@ function App () {
             </p>
             <hr />
             <ul className="social">
-              <li><a href="http://youmu257.github.io"><i className="fa fa-home"></i></a></li>
-              <li><address><a href="mailto:youmu257@gmail.com"><i className="fa fa-envelope-o"></i></a></address></li>
-              <li><a href="https://github.com/youmu257"><i className="fa fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/%E5%86%A0%E9%9C%96-%E6%9D%8E-a97a44123/"><i className="fa fa-linkedin"></i></a></li>
+              <li>
+                <a href="http://youmu257.github.io">
+                  <i className="fa fa-home"></i>
+                </a>
+              </li>
+              <li>
+                <address>
+                  <a href="mailto:youmu257@gmail.com">
+                    <i className="fa fa-envelope-o"></i>
+                  </a>
+                </address>
+              </li>
+              <li>
+                <a href="https://github.com/youmu257">
+                  <i className="fa fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/%E5%86%A0%E9%9C%96-%E6%9D%8E-a97a44123/">
+                  <i className="fa fa-linkedin"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
