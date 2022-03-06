@@ -871,7 +871,7 @@ footer .social-links li:first-child { margin-left: 0; }
   margin-left:0px;
   list-style-type: none;
   font-family: "Microsoft JhengHei",sans-serif;
-  //border-bottom: 1px solid #AAA;
+  /* border-bottom: 1px solid #AAA; */
   margin-bottom: 20px;
   display: inline-block;
 }
@@ -879,6 +879,6 @@ footer .social-links li:first-child { margin-left: 0; }
 .trophy::before{
   font-family: "FontAwesome";
   content: "\f091";
-  //color:#AAA;
+  /* color:#AAA; */
   font-size: 20px;
 }

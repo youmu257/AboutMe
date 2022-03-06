@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './AboutSection'
+import Resume from './Resume/ResumeSection'
 
 function App () {
   return (
@@ -44,6 +45,7 @@ function App () {
       </header>
       {/* Header End */}
       <About />
+      <Resume />
     </div>
   )
 }
