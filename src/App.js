@@ -1,6 +1,7 @@
 import React from 'react'
 import About from './AboutSection'
 import Resume from './Resume/ResumeSection'
+import Portfolio from './Portfolio/PortfolioSection'
 
 function App () {
   return (
@@ -64,6 +65,7 @@ function App () {
       {/* Header End */}
       <About />
       <Resume />
+      <Portfolio />
     </div>
   )
 }
