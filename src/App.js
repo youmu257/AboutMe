@@ -2,6 +2,7 @@ import React from 'react'
 import About from './AboutSection'
 import Resume from './Resume/ResumeSection'
 import Portfolio from './Portfolio/PortfolioSection'
+import MottoSection from './Slides/MottoSection'
 
 function App () {
   return (
@@ -66,6 +67,7 @@ function App () {
       <About />
       <Resume />
       <Portfolio />
+      <MottoSection />
     </div>
   )
 }
