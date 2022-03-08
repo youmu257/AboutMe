@@ -3,6 +3,7 @@ import About from './AboutSection'
 import Resume from './Resume/ResumeSection'
 import Portfolio from './Portfolio/PortfolioSection'
 import MottoSection from './Slides/MottoSection'
+import Footer from './Footer/Footer'
 
 function App () {
   return (
@@ -68,6 +69,7 @@ function App () {
       <Resume />
       <Portfolio />
       <MottoSection />
+      <Footer />
     </div>
   )
 }
