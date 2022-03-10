@@ -17,7 +17,6 @@ class PageHeader extends React.PureComponent {
           <link rel="stylesheet" href="css/default.css" />
           <link rel="stylesheet" href="css/layout.css" />
           <link rel="stylesheet" href="css/media-queries.css" />
-          <link rel="stylesheet" href="css/magnific-popup.css" />
           <link rel="stylesheet" href="css/App.css" />
 
           {/* Favicons */}

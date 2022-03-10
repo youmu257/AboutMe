@@ -504,6 +504,11 @@ ul#nav li a:active { background-color: transparent !important; }
 }
 
 /* popup modal */
+.popup-content {
+  padding: 0px !important;
+	border: 0px !important;
+  width: auto !important;
+}
 .popup-modal {
 	max-width: 550px;
 	background: #fff;
