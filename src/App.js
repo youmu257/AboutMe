@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import SectionNavigation from './Header/SectionNavigation'
 import InfoBanner from './Header/InfoBanner'
 import About from './AboutSection'
@@ -8,6 +8,11 @@ import MottoSection from './Slides/MottoSection'
 import Footer from './Footer/Footer'
 
 function App () {
+  const aboutme = useRef(null)
+  const smoothScrollToAbout = () => aboutme.current.scrollIntoView({
+    behavior: 'smooth'
+  })
+
   return (
     <div className="App">
       {/* Header */}
@@ -15,10 +20,13 @@ function App () {
         <SectionNavigation />
         <InfoBanner />
         <p className="scrolldown">
-          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+          <a className="smoothscroll" onClick={smoothScrollToAbout}>
+            <i className="icon-down-circle"></i>
+          </a>
         </p>
       </header>
       {/* Header End */}
+      <div ref={aboutme}></div>
       <About />
       <Resume />
       <Portfolio />
