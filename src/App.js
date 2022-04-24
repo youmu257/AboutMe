@@ -12,12 +12,12 @@ function App () {
   const smoothScrollToAbout = () => aboutme.current.scrollIntoView({
     behavior: 'smooth'
   })
+  const headerRef = useRef(null)
   const [heightScroll, updateHeightScroll] = useState(0)
+  const headerHeight = headerRef.current?.clientHeight
   // 取得滾動時的位置
   const handleScroll = () => {
-    updateHeightScroll({
-      heightScroll: window.scrollY
-    })
+    updateHeightScroll(window.scrollY)
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -29,8 +29,8 @@ function App () {
   return (
     <div className="App">
       {/* Header */}
-      <header className="App-header" id="home">
-        <SectionNavigation props={heightScroll}/>
+      <header className="App-header" id="home" ref={headerRef}>
+        <SectionNavigation heightScroll={heightScroll} headerHeight={headerHeight}/>
         <InfoBanner />
         <p className="scrolldown">
           <a className="smoothscroll" onClick={smoothScrollToAbout}>
