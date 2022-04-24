@@ -4,10 +4,13 @@ function SectionNavigation (props) {
   let opaque = ''
   // header 的高度
   const h = props.headerHeight
+  // header 的寬度
+  const w = props.headerWidth
   // 目前滾動到位置(高度)
   const y = props.heightScroll
-  if ((y > h * 0.20) && (y < h) && (y > 768)) {
-    opaque = 'opaque'
+  if ((y > h * 0.20) && (y < h) && (w > 768)) {
+    // 隱藏起來
+    opaque = 'not-show'
   } else {
     if (y < h * 0.20) {
       opaque = ''

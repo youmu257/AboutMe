@@ -799,3 +799,7 @@ properly.
 	margin-right: auto !important;
 	text-align: center !important;
 }
+
+.not-show {
+	display: none;
+}

@@ -15,6 +15,7 @@ function App () {
   const headerRef = useRef(null)
   const [heightScroll, updateHeightScroll] = useState(0)
   const headerHeight = headerRef.current?.clientHeight
+  const headerWidth = headerRef.current?.clientWidth
   // 取得滾動時的位置
   const handleScroll = () => {
     updateHeightScroll(window.scrollY)
@@ -30,7 +31,7 @@ function App () {
     <div className="App">
       {/* Header */}
       <header className="App-header" id="home" ref={headerRef}>
-        <SectionNavigation heightScroll={heightScroll} headerHeight={headerHeight}/>
+        <SectionNavigation heightScroll={heightScroll} headerHeight={headerHeight} headerWidth={headerWidth}/>
         <InfoBanner />
         <p className="scrolldown">
           <a className="smoothscroll" onClick={smoothScrollToAbout}>
