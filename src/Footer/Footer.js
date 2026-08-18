@@ -44,6 +44,11 @@ const infoArray = [
   // }
 ]
 
+function smoothScrollTo (e) {
+  e.preventDefault()
+  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({ behavior: 'smooth' })
+}
+
 function Footer () {
   // 把資訊陣列塞進樣板中
   const infoList = []
@@ -64,7 +69,7 @@ function Footer () {
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
+          <a className="smoothscroll" title="Back to Top" href="#home" onClick={smoothScrollTo}>
             <i className="icon-up-open"></i>
           </a>
         </div>

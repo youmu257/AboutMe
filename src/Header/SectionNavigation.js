@@ -1,5 +1,10 @@
 import React from 'react'
 
+function smoothScrollTo (e) {
+  e.preventDefault()
+  document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({ behavior: 'smooth' })
+}
+
 function SectionNavigation (props) {
   let opaque = ''
   // header 的高度
@@ -36,16 +41,16 @@ function SectionNavigation (props) {
       </a>
       <ul id="nav" className="nav">
         <li className="current">
-          <a className="smoothscroll" href="#home">Home</a>
+          <a className="smoothscroll" href="#home" onClick={smoothScrollTo}>Home</a>
         </li>
         <li>
-          <a className="smoothscroll" href="#about">About</a>
+          <a className="smoothscroll" href="#about" onClick={smoothScrollTo}>About</a>
         </li>
         <li>
-          <a className="smoothscroll" href="#resume">Resume</a>
+          <a className="smoothscroll" href="#resume" onClick={smoothScrollTo}>Resume</a>
         </li>
         <li>
-          <a className="smoothscroll" href="#portfolio">Works</a>
+          <a className="smoothscroll" href="#portfolio" onClick={smoothScrollTo}>Works</a>
         </li>
       </ul>
     </nav>
