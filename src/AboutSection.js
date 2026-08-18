@@ -5,7 +5,7 @@ function About () {
     <section id="about">
       <div className="row">
         <div className="three columns">
-          <img className="profile-pic" src="images/profilepic.jpg" alt="" />
+          <img className="profile-pic" src={`${process.env.PUBLIC_URL}/images/profilepic.jpg`} alt="" />
         </div>
 
         <div className="nine columns main-col">
@@ -17,7 +17,7 @@ function About () {
           <div className="row">
             <div className="columns download">
               <p>
-                <a href="resume_guan_lin_ch.pdf" target="_blank" className="button">
+                <a href={`${process.env.PUBLIC_URL}/resume_guan_lin_ch.pdf`} target="_blank" rel="noreferrer" className="button">
                   <i className="fa fa-download"></i>Download (Chinese)
                 </a>
               </p>

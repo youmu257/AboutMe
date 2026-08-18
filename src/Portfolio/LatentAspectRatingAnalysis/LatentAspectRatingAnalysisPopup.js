@@ -11,7 +11,7 @@ function LatentAspectRatingAnalysisPopup () {
     >
       {close => (
         <div className="modal popup-modal">
-          <img className="header scale-with-grid" src="images/portfolio/modals/reviews.jpg" alt="" />
+          <img className="header scale-with-grid" src={`${process.env.PUBLIC_URL}/images/portfolio/modals/reviews.jpg`} alt="" />
           <div className="content">
             <div className="description-box">
               <h4>Latent Aspect Rating Analysis</h4>

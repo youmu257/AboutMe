@@ -10,7 +10,7 @@ function Education () {
       <div className="nine columns main-col">
         <div className="row item">
           <div className="twelve columns">
-            <img src="images/ncku_logo.gif" height="30" width="30"></img>
+            <img src={`${process.env.PUBLIC_URL}/images/ncku_logo.gif`} height="30" width="30"></img>
             <h3>國立成功大學</h3>
             <p className="info">資訊工程研究所 智慧型知識管理實驗室<span>&bull;</span>
             <em className="date">July 2015 - Sep 2017</em></p>
@@ -28,7 +28,7 @@ function Education () {
         {/* item end */}
         <div className="row item">
           <div className="twelve columns">
-            <img src="images/icon_nttu_301.png" height="30" width="30" ></img>
+            <img src={`${process.env.PUBLIC_URL}/images/icon_nttu_301.png`} height="30" width="30" ></img>
             <h3>國立臺東大學</h3>
             <p className="info">資訊工程學系 <span>&bull;</span> <em className="date">Sep 2011 - Jun 2015</em></p>
             <p>

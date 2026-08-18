@@ -11,7 +11,7 @@ function TopicModelPopup () {
     >
       {close => (
         <div className="modal popup-modal">
-          <img className="header scale-with-grid" src="images/portfolio/modals/topic model.PNG" alt="" />
+          <img className="header scale-with-grid" src={`${process.env.PUBLIC_URL}/images/portfolio/modals/topic model.PNG`} alt="" />
           <div className="content">
             <div className="description-box">
               <h4>主題模型</h4>

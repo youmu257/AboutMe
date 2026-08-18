@@ -5,7 +5,7 @@ function TopicModel () {
     <div className="columns portfolio-item">
       <div className="item-wrap">
         <a href="#modal-02" title="">
-          <img alt="" src="images/portfolio/topic model.PNG" />
+          <img alt="" src={`${process.env.PUBLIC_URL}/images/portfolio/topic model.PNG`} />
           <div className="overlay">
             <div className="portfolio-item-meta">
               <h5>主題模型</h5>

@@ -5,7 +5,7 @@ function NLP () {
     <div className="columns portfolio-item">
       <div className="item-wrap">
         <a href="#modal-04" title="">
-          <img alt="" src="images/portfolio/NLP.png" />
+          <img alt="" src={`${process.env.PUBLIC_URL}/images/portfolio/NLP.png`} />
           <div className="overlay">
             <div className="portfolio-item-meta">
               <h5>常用的自然語言工具整理</h5>

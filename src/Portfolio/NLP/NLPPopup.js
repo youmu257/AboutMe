@@ -11,7 +11,7 @@ function NLPPopup () {
     >
       {close => (
         <div className="modal popup-modal">
-          <img className="header scale-with-grid" src="images/portfolio/modals/NLP.png" alt="" />
+          <img className="header scale-with-grid" src={`${process.env.PUBLIC_URL}/images/portfolio/modals/NLP.png`} alt="" />
           <div className="content">
             <div className="description-box">
               <h4>常用的自然語言工具整理</h4>

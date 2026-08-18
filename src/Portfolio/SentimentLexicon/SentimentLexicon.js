@@ -5,7 +5,7 @@ function SentimentLexicon () {
     <div className="columns portfolio-item">
       <div className="item-wrap">
         <a href="#modal-01" title="">
-          <img alt="" src="images/portfolio/sentiment_lexicon.jpg" />
+          <img alt="" src={`${process.env.PUBLIC_URL}/images/portfolio/sentiment_lexicon.jpg`} />
           <div className="overlay">
             <div className="portfolio-item-meta">
               <h5>情緒字典</h5>

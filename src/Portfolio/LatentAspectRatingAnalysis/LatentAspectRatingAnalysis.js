@@ -5,7 +5,7 @@ function LatentAspectRatingAnalysis () {
     <div className="columns portfolio-item">
       <div className="item-wrap">
         <a href="#modal-03" title="">
-          <img alt="" src="images/portfolio/reviews.jpg" />
+          <img alt="" src={`${process.env.PUBLIC_URL}/images/portfolio/reviews.jpg`} />
           <div className="overlay">
             <div className="portfolio-item-meta">
               <h5>Latent Aspect Rating Analysis</h5>
