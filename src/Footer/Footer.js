@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterTemplate from './FooterTemplate'
+import packageJson from '../../package.json'
 
 const infoArray = [
   {
@@ -66,6 +67,7 @@ function Footer () {
           <ul className="copyright">
             <li>&copy; Copyright 2014 CeeVee</li>
             <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            <li>v{packageJson.version}</li>
           </ul>
         </div>
         <div id="go-top">
