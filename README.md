@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# AboutMe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+李冠霖的個人履歷網站，以 [Create React App](https://github.com/facebook/create-react-app) 建置，版型改編自 Styleshout 的 Ceevee 主題。
 
-## Available Scripts
+線上網址：https://youmu257.github.io/AboutMe/
 
-In the project directory, you can run:
+## 本機開發
 
-### `npm start`
+```bash
+npm install
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+開發伺服器會在 [http://localhost:3000](http://localhost:3000) 啟動，存檔會自動重新整理。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 測試
 
-### `npm test`
+```bash
+npm test
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 建置
 
-### `npm run build`
+```bash
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+輸出到 `build/` 資料夾，`package.json` 裡的 `homepage` 欄位會讓資源路徑正確對應到 `/AboutMe` 這個子路徑。
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 部署
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+推送到 `master` 分支會觸發 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)：自動跑測試、build，再部署到 GitHub Pages。
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+第一次設定時，需要到 repo 的 **Settings → Pages → Build and deployment → Source** 手動切成「**GitHub Actions**」，之後每次推 `master` 就會自動更新線上版本。
